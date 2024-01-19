@@ -133,7 +133,7 @@ a {
  }
 
  .list--tick {
-    list-style-image: url(../images/tick.png);
+    list-style-image: url(../images/tick.svg);
     padding-left: 3rem;
  }
 
