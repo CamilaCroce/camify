@@ -121,50 +121,126 @@ a {
 }
 
 /* Lists */
- .list {
+.list {
     list-style: none;
     padding-left: 0;
     color: var(--color-headings);
- }
+}
 
- .list--inline .list__item {
+.list--inline .list__item {
     display: inline-block;
     margin-right: 2rem;
- }
+}
 
- .list--tick {
+.list--tick {
     list-style-image: url(../images/tick.svg);
     padding-left: 3rem;
- }
+}
 
- .list--tick .list__item {
+.list--tick .list__item {
     padding-left: 0.5rem;
     margin-bottom: 1rem;
- }
+}
 
- @media screen and (min-width: 1024px) {
-    .list--tick .list__item {
-        padding-left: 0;
+@media screen and (min-width: 1024px) {
+   .list--tick .list__item {
+       padding-left: 0;
+   }
+}
+
+/* Icons */
+
+.icon {
+   width: 40px;
+   height: 40px;
+}
+
+.icon--primary {
+   fill: var(--color-primary);
+}
+
+.icon--white {
+    fill: #fff;
+}
+
+.icon-container {
+   background-color: #f3f9fa ;
+   width: 64px;
+   height: 64px;
+   border-radius: 100%;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+}
+
+/* Buttons */
+
+.btn {
+   text-transform: uppercase;
+   border-radius: 40px;
+   border: 0;
+   font-size: 1.8rem;
+   font-weight: 600;
+   margin: 1rem 0;
+   padding: 2rem 4vw;
+   white-space: nowrap;
+   text-align: center;
+   cursor: pointer;
+}
+
+.btn .icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
+
+.btn--secondary {
+    background: var(--color-secondary);
+    color: #fff;
+}
+
+.btn--secondary:hover {
+    background: #00c5e7;
+}
+
+.btn--accent {
+    background: var(--color-accent);
+    color: #fff;
+}
+
+.btn--accent:hover {
+    background: #dd2c00;
+}
+
+.btn--outline {
+    background: none;
+    color: var(--color-headings);
+    border: 2px solid var(--color-headings);
+}
+
+.btn--outline:hover {
+    background: var(--color-headings);
+    color: #fff;
+}
+
+.btn--stretched {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.btn--block {
+    width: 100%;
+    display: inline-block;
+}
+
+@media screen and (min-width: 1024px) {
+    .btn {
+        font-size: 1.5rem;
     }
- }
+    
+}
 
- /* Icons */
 
- .icon {
-    width: 40px;
-    height: 40px;
- }
 
- .icon--primary {
-    fill: var(--color-primary);
- }
 
- .icon-container {
-    background-color: #f3f9fa ;
-    width: 64px;
-    height: 64px;
-    border-radius: 100%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
- }
