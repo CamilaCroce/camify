@@ -12,9 +12,9 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-    
     <!-- HEADER -->
     <header>
       <nav class="nav collapsible">
@@ -35,18 +35,25 @@
     <section class="block block--dark block--skewed-left banner">
       <div class="container grid grid--1x2">
         <header class="block__header banner__content">
-          <h1 class="block__heading">Cloud Hosting for Pros</h1>
+          <h1 class="block__heading" data-aos="fade-right">
+            Cloud Hosting for Pros
+          </h1>
           <p class="banner__tagline">
             Deploy your websites in less than 60 seconds.
           </p>
           <a href="#" class="btn btn--accent btn--stretched">Get Started</a>
         </header>
-        <img class="banner_image" src="images/banner.png" alt="" />
+        <img
+          class="banner_image"
+          src="images/banner.png"
+          alt=""
+          data-aos="zoom-in-left"
+        />
       </div>
     </section>
 
     <!-- DOMAIN -->
-    <section class="block container block-domain">
+    <section class="block container block-domain" data-aos="slide-up">
       <header class="block__header">
         <h2>Starting at $10 per month</h2>
         <p>
@@ -78,7 +85,7 @@
     </section>
 
     <!-- PLANS -->
-    <section class="block container block-plans">
+    <section class="block container block-plans" data-aos="slide-up">
       <div class="grid grid--1x3">
         <div class="plan">
           <div class="card card--secondary">
@@ -153,7 +160,7 @@
         </p>
       </header>
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-right">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite.svg#easy"></use>
@@ -167,7 +174,7 @@
           </p>
           <a href="#" class="link-arrow">Learn More</a>
         </div>
-        <picture>
+        <picture data-aos="zoom-in-left">
           <img class="feature__image" src="images/easy.jpg" alt="" />
         </picture>
       </article>
@@ -220,79 +227,84 @@
       </header>
       <div class="container grid grid--1x2">
         <picture class="block-showcase__image">
-          <img src="images/ipad.png" alt="" />
+          <img src="images/ipad.png" alt="" data-aos="slide-right" />
         </picture>
-        <p>
-          <ul class="list">
-  
-            <li>
-              <div class="media">
-                <div class="media__image">
-                  <svg class="icon icon--primary">
-                    <use xlink:href="images/sprite.svg#snap"></use>
-                  </svg>
-                </div>
-                <div class="media__body">
-                  <h3 class="media__title">Easy Start & Managed Updates</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam fuga laborum
-                    et accusamus, voluptas nostrum adipisci. Rerum natus iusto a.
-                  </p>
-                </div>
+
+        <ul class="list" data-aos="slide-up">
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary">
+                  <use xlink:href="images/sprite.svg#snap"></use>
+                </svg>
               </div>
-            </li>
-  
-            <li>
-              <div class="media">
-                <div class="media__image">
-                  <svg class="icon icon--primary">
-                    <use xlink:href="images/sprite.svg#growth"></use>
-                  </svg>
-                </div>
-                <div class="media__body">
-                  <h3 class="media__title">Staging, GIT & WP-CLI</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam fuga laborum
-                    et accusamus, voluptas nostrum adipisci. Rerum natus iusto a.
-                  </p>
-                </div>
+              <div class="media__body">
+                <h3 class="media__title">Easy Start & Managed Updates</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
+                  fuga laborum et accusamus, voluptas nostrum adipisci. Rerum
+                  natus iusto a.
+                </p>
               </div>
-            </li>
-  
-            <li>
-              <div class="media">
-                <div class="media__image">
-                  <svg class="icon icon--primary">
-                    <use xlink:href="images/sprite.svg#wordpress"></use>
-                  </svg>
-                </div>
-                <div class="media__body">
-                  <h3 class="media__title">Dynamic Caching & More</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam fuga laborum
-                    et accusamus, voluptas nostrum adipisci. Rerum natus iusto a.
-                  </p>
-                </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary">
+                  <use xlink:href="images/sprite.svg#growth"></use>
+                </svg>
               </div>
-            </li>
-          </ul>
-        </p>
+              <div class="media__body">
+                <h3 class="media__title">Staging, GIT & WP-CLI</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
+                  fuga laborum et accusamus, voluptas nostrum adipisci. Rerum
+                  natus iusto a.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary">
+                  <use xlink:href="images/sprite.svg#wordpress"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">Dynamic Caching & More</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
+                  fuga laborum et accusamus, voluptas nostrum adipisci. Rerum
+                  natus iusto a.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
 
     <!-- TESTIMONIALS -->
-    <section class="block">
+    <section class="block" data-aos="zoom-in-left">
       <header class="block__header">
         <h2>What our Customers are Saying</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, numquam.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+          numquam.
         </p>
       </header>
       <div class="container">
         <div class="card testimonial">
           <div class="grid grid--1x2">
             <div class="testimonial__image">
-              <img src="images/testimonial.jpg" alt="A happy, similing customer" />
+              <img
+                src="images/testimonial.jpg"
+                alt="A happy, similing customer"
+              />
               <span class="icon-container icon-container--accent">
                 <svg class="icon icon--white icon--small">
                   <use xlink:href="images/sprite.svg#quotes"></use>
@@ -301,8 +313,9 @@
             </div>
             <blockquote class="quote">
               <p class="quote__text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa quis
-                omnis officiis debitis maxime sunt ex quas maiores porro provident.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                quis omnis officiis debitis maxime sunt ex quas maiores porro
+                provident.
               </p>
               <footer>
                 <div class="media">
@@ -329,9 +342,9 @@
         <div class="callout__content">
           <h2 class="callout__heading">Ready to Get Started?</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi officia
-            adipisci quisquam culpa nobis magnam autem aliquid deleniti, aspernatur
-            exercitationem?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+            officia adipisci quisquam culpa nobis magnam autem aliquid deleniti,
+            aspernatur exercitationem?
           </p>
         </div>
         <a href="#" class="btn btn--secondary btn--stretched">Get Started</a>
@@ -390,5 +403,9 @@
       </div>
     </footer>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
