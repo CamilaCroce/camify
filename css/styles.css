@@ -50,7 +50,7 @@ h2 {
 
 h3 {
     font-size: 3rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 p {
@@ -578,6 +578,13 @@ a {
     }
 }
 
+@media screen and (min-width: 1024px) {
+    .callout__container {
+        margin: 0px 190px;
+        transform: translateY(50px);
+    }
+}
+
 /* COLLAPSIBLES */
 
 .collapsible__header {
@@ -783,7 +790,7 @@ a {
 /* FEATURES BLOCK */
 
 .feature {
-    padding: 12rem;
+    padding: 6rem 0;
     gap: 4rem 2rem;
 }
 
